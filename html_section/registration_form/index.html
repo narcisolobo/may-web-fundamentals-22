@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+    <ul>
+        <li>You cannot have more than one of the same ID.</li>
+        <li>Labels and inputs are married with matching for and ID attributes.</li>
+        <li>You define families of radio buttons by matching their name attributes.</li>
+        <li>Div elements are block elements - they don't like neighbors by default</li>
+    </ul>
+    <form>
+        <div>
+            <label for="firstName">First Name *</label>
+            <input type="text" name="firstName" id="firstName">
+        </div>
+        <div>
+            <label for="lastName">Last Name *</label>
+            <input type="text" name="lastName" id="lastName">
+        </div>
+        <div>
+            <label for="birthday">Birthday:</label>
+            <input type="date" name="birthday" id="birthday">
+        </div>
+        <fieldset>
+            <legend>Gender Identity</legend>
+            <input type="radio" name="gender" id="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="non-binary">
+            <label for="non-binary">Non-binary</label>
+            <input type="radio" name="gender" id="prefer-not-to-say">
+            <label for="prefer-not-to-say">Prefer Not To Say</label>
+        </fieldset>
+        <label for="description">Description:</label>
+        <br>
+        <textarea name="description" id="description" cols="48" rows="5"></textarea>
+        <div>
+            <label for="language">Favorite Language</label>
+            <select name="language" id="language">
+                <option value="JavaScript">JavaScript</option>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+            </select>
+        </div>
+        <input type="submit" value="Register">
+    </form>
+</body>
+
+</html>

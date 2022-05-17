@@ -1,0 +1,32 @@
+h1 {
+  color: greenyellow;
+  background-color: darkblue;
+}
+
+h2 {
+  text-decoration: underline;
+}
+
+#subtitle {
+  color: rebeccapurple
+}
+
+.ordered1 {
+  background-color: cyan;
+}
+
+a {
+  text-decoration: none;
+  color: maroon;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.piggy {
+  width: 200px;
+  /* border needs width style color */
+  border: 3px solid black;
+  border-radius: 20px;
+}

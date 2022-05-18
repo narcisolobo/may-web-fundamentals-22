@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: rebeccapurple;
+}
+
+/*
+  em is the width of one character in the CURRENT font
+  rem is the width of one character in the ROOT font
+*/
+
+.box {
+  background-color: darkorchid;
+  padding: 2rem;
+  border: 1px solid black;
+  display: inline-block;
+  font-size: x-large;
+}
+
+.flex-item {
+  background-color: darkorchid;
+  padding: 2rem;
+  border: 1px solid black;
+  font-size: x-large;
+}
+
+.flex-container {
+  background-color: aquamarine;
+  min-height: 200px;
+  
+  /* the three amigos of flex */
+  display: flex;
+  /* horizontal alignment */
+  justify-content: space-evenly;
+  /* vertical alignment */
+  align-items: center;
+}
+
+nav {
+  padding: .6rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: aqua;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+h2, h3 {
+  margin-bottom: .6em;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

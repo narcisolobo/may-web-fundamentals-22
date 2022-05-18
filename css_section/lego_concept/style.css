@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: hotpink;
+  padding: 20px;
+}
+
+.container {
+  background-color: orange;
+  width: 70%;
+  min-height: 200px;
+  margin: 0 auto;
+}
+
+.main-header {
+  background-color: cyan;
+  min-height: 100px;
+}
+
+.content-container {
+  background-color: rebeccapurple;
+  min-height: 200px;
+  display: flex;
+}
+
+aside {
+  background-color: yellow;
+  min-height: 200px;
+  flex: 1;
+}
+
+main {
+  background-color: palegreen;
+  min-height: 200px;
+  flex: 3;
+}

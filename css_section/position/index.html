@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>The Position Property</h1>
+    <h2>First rule of position - do not abuse position!</h2>
+
+    <ul>
+        <li>position: static</li>
+        <li>position: relative</li>
+        <li>position: absolute</li>
+        <li>position: fixed</li>
+        <li>position: sticky</li>
+    </ul>
+
+    <nav>This is position sticky</nav>
+
+    <h3>Static is the default value of position.</h3>
+    <p><em>Top, left, bottom, right have no effect.</em></p>
+    <div class="box static">Static</div>
+
+    <h3>Relative positions the element relative to its normal position.</h3>
+    <p><em>Top, left, bottom, right have an effect.</em></p>
+    <div class="box relative">Relative</div>
+
+    <h3>Absolute positions the element relative to its closest positioned ancestor.</h3>
+    <p><em>Top, left, bottom, right have an effect.</em></p>
+    <p><strong>An absolutely positioned element MUST have a relatively positioned parent.</strong></p>
+    <div class="box centered relative">
+        <div class="circle absolute"></div>
+    </div>
+
+    <h3>Fixed positions the element relative to the browser window.</h3>
+    <p>Cookie notices are an excellent use case for position: fixed.</p>
+    <div class="cookie">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam sequi recusandae consectetur illum doloribus quisquam voluptatem labore at! Eveniet sequi dignissimos nobis odio omnis mollitia veniam natus inventore exercitationem dolor.</p>
+    </div>
+
+    <h3>Sticky toggles the element between fixed and relative according to the user's scroll position.</h3>
+</body>
+</html>

@@ -74,39 +74,108 @@ printArrayVals(arr2);
 printArrayVals(arr3);
 printArrayVals(arr4);
 
-/* 5. Find and Print Max
-printMaxOfArray(arr)
-Given an array, find and print its largest element. 
+/*
+  5. Find and Print Max
+  printMaxOfArray(arr)
+  Given an array, find and print its largest element. 
+*/
 
-7. Array with Odds
-returnOddsArray1To255()
-Create an array with all the odd integers between 1 and 255 (inclusive).  
+// PSEUDOCODE
+// Create a function named printMaxOfArray that takes in an array as input
+// Inside the function, create a variable called max and set its value to the first value in the array
+// Create a for loop that starts at 0, ends at the array length, and increments by one
+// Inside the for loop create a conditional statement - an if statement
+// If the current value is greater than max, then make it the new max
+// after the loop, console.log max
 
-9. Greater than Y
-returnArrayCountGreaterThanY(arr, y)
-Given an array and a value Y, count and print the number of array values greater than Y. 
+function printMaxOfArray(arr) {
+  var max = arr[0];
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] > max) {
+      max = arr[i];
+    }
+  }
+  console.log(max);
+}
 
-11. Max, Min, Average
-printMaxMinAverageArrayVals(arr)
-Given an array, print the max, min and average values for that array.
+printMaxOfArray([4, 2, 8, 1, 33, 45, 0, 10]); // -> 45
 
-13. Swap String For Array Negative Values
-swapStringForArrayNegativeVals(arr)
-Given an array of numbers, replace any negative values with the string 'Dojo'.
+/*
+  6. Get and Print Average
+  printAverageOfArray(arr)
+  Analyze an array’s values and print the average.
+*/
 
-6. Get and Print Average
-printAverageOfArray(arr)
-Analyze an array’s values and print the average. 
+// Create a function named printAverageOfArray that takes in an array as input
+// Create a variable named sum and set it to the first value in the array (position zero)
+// Create a for loop that starts at 1, ends at the end of the array, and increments by one
+// Update sum by adding the current value to it
+// After the for loop, print sum divided by the length of the array
 
-8. Square the Values
-squareArrayVals(arr)
-Square each value in a given array, returning that same array with changed values. 
+function printAverageOfArray(arr) {
+  var sum = arr[0];
+  for (let i = 1; i < arr.length; i++) {
+    sum = sum + arr[i];
+  }
+  console.log(sum / arr.length);
+}
 
-10. Zero Out Negative Numbers
-zeroOutArrayNegativeVals(arr)
-Return the given array, after setting any negative values to zero. 
+printAverageOfArray([1, 2, 3, 4]) // --> 2.5
 
-12. Shift Array Values
-shiftArrayValsLeft(arr)
-Given an array, move all values forward (to the left) by one index, dropping the first value and leaving a 0 (zero) value at the end of the array.
- */
+/*
+  7. Array with Odds
+  returnOddsArray1To255()
+  Create an array with all the odd integers between 1 and 255 (inclusive).  
+*/
+
+// PUSH METHOD
+var myArr = [1, 2, 6, 3, 7]
+myArr.push(5)
+
+function returnOddsArray1To255() {
+  var oddsArr = [];
+  for (var i = 1; i <= 255; i += 2) {
+    oddsArr.push(i);
+  }
+  return oddsArr;
+}
+
+// When we console log a function call, we print the value of the function call
+// What is the value of a function? Whatever that function RETURNS.
+console.log(returnOddsArray1To255());
+
+/*
+  8. Square the Values
+  squareArrayVals(arr)
+  Square each value in a given array, returning that same array with changed values.
+*/
+
+/*
+  9. Greater than Y
+  returnArrayCountGreaterThanY(arr, y)
+  Given an array and a value Y, count and print the number of array values greater than Y.
+*/
+
+/*
+  10. Zero Out Negative Numbers
+  zeroOutArrayNegativeVals(arr)
+  Return the given array, after setting any negative values to zero.
+*/
+
+/*
+  11. Max, Min, Average
+  printMaxMinAverageArrayVals(arr)
+  Given an array, print the max, min and average values for that array.
+*/
+
+/*
+  12. Shift Array Values
+  shiftArrayValsLeft(arr)
+  Given an array, move all values forward (to the left) by one index, dropping the first value and leaving a 0 (zero) value at the end of the array.
+*/
+
+/*
+  13. Swap String For Array Negative Values
+  swapStringForArrayNegativeVals(arr)
+  Given an array of numbers, replace any negative values with the string 'Dojo'.
+*/

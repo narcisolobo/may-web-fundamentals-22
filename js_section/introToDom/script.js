@@ -34,3 +34,7 @@ myCar.displayStats();
 function disappear(element) {
   element.remove();
 }
+
+function banana(element) {
+  console.log(element);
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Document Object Model</title>
+</head>
+<body>
+    <h1 id="apple">Rule of Thumb:</h1>
+    <p>If the element you want to manipulate IS the element you're listening on, use the this keyword.</p>
+    <p>If the element you want to manipulate IS NOT the element you're listening on, use the ID instead.</p>
+    <h2 id="myTitle" onclick="banana(this)">Event Listener</h2>
+    <button onclick="disappear(myTitle)">CLICK ME TO MAKE THE H2 DISAPPEAR</button>
+    <button onclick="disappear(this)">DISAPPEAR</button>
+    <button onclick="disappear(apple)">CLICK TO MAKE TITLE DISAPPEAR</button>
+    <h3 onclick="banana(this)">Example</h3>
+    <script src="./script.js"></script>
+</body>
+</html>

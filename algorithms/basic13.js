@@ -5,7 +5,7 @@
 */
 
 function print1To255() {
-  for (var i = 1; i < 256; i++){
+  for (var i = 1; i < 256; i++) {
     console.log(i);
   }
 }
@@ -19,7 +19,7 @@ print1To255();
 */
 
 function printOdds1To255() {
-  for (var i = 1; i < 256; i+=2){
+  for (var i = 1; i < 256; i += 2) {
     console.log(i);
   }
 }
@@ -58,16 +58,16 @@ printIntsAndSum0To255();
 // var myArray = ['green'];
 // console.log(myArray[0])
 
-function printArrayVals(arr){
-  for(var i = 0; i < arr.length; i++) {
-    console.log(arr[i])
+function printArrayVals(arr) {
+  for (var i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
   }
 }
 
 var arr1 = [1, 2, 3, 4];
 var arr2 = [];
-var arr3 = ['green'];
-var arr4 = ['c', 't', 'h'];
+var arr3 = ["green"];
+var arr4 = ["c", "t", "h"];
 
 printArrayVals(arr1);
 printArrayVals(arr2);
@@ -120,7 +120,7 @@ function printAverageOfArray(arr) {
   console.log(sum / arr.length);
 }
 
-printAverageOfArray([1, 2, 3, 4]) // --> 2.5
+printAverageOfArray([1, 2, 3, 4]); // --> 2.5
 
 /*
   7. Array with Odds
@@ -129,8 +129,8 @@ printAverageOfArray([1, 2, 3, 4]) // --> 2.5
 */
 
 // PUSH METHOD
-var myArr = [1, 2, 6, 3, 7]
-myArr.push(5)
+var myArr = [1, 2, 6, 3, 7];
+myArr.push(5);
 
 function returnOddsArray1To255() {
   var oddsArr = [];
@@ -163,7 +163,7 @@ function squareArrayVals(arr) {
   return arr;
 }
 
-var myArr = [6, 3, 9, 10]
+var myArr = [6, 3, 9, 10];
 console.log(squareArrayVals(myArr));
 
 /*

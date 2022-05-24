@@ -150,6 +150,22 @@ console.log(returnOddsArray1To255());
   Square each value in a given array, returning that same array with changed values.
 */
 
+// PSEUDOCODE
+// Create a function named squareArrayVals that takes in an array as input.
+// Create a for loop that starts at 0, ends at the length of the array, and increments by 1
+// Inside the for loop, set each value to be the product of multiplying itself by itself
+// After the for loop, return the array
+
+function squareArrayVals(arr) {
+  for (var i = 0; i < arr.length; i++) {
+    arr[i] = arr[i] * arr[i];
+  }
+  return arr;
+}
+
+var myArr = [6, 3, 9, 10]
+console.log(squareArrayVals(myArr));
+
 /*
   9. Greater than Y
   returnArrayCountGreaterThanY(arr, y)

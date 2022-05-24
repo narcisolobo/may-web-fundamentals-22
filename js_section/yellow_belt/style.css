@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
+/* utility classes start */
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +8,8 @@
 }
 
 body {
-  font-family: 'Balsamiq Sans', cursive;
+  font-family: "Balsamiq Sans", cursive;
+  background-color: #eeeeee;
 }
 
 .container {
@@ -22,32 +24,96 @@ body {
   gap: 1.5rem;
 }
 
+.text-purple {
+  color: #9828ff;
+}
+
+.btn {
+  padding: 1rem 0.5rem;
+  color: white;
+  border: 0;
+}
+
+.text-lg {
+  font-size: large;
+}
+
+.text-xlg {
+  font-size: x-large;
+}
+
+.bg-green {
+  background-color: #69a84f;
+}
+
+.bg-purple {
+  background-color: #9828ff;
+}
+
+.bg-grey {
+  background-color: grey;
+}
+
+.mb {
+  margin-bottom: 2rem;
+}
+
+.icon {
+  width: 50px;
+}
+/* utility classes end */
+
+/* header start */
 header {
-  min-height: 50px;
-  background-color: red;
+  background-color: black;
+  color: white;
+  padding: 0.5rem 0rem;
+  border-top: 5px solid #9828ff;
+  margin-bottom: 1rem;
 }
+/* header end */
 
-main {
-  background-color: yellow;
-  min-height: 500px;
-}
-
+/* highlights start */
 .highlights {
-  background-color: lightgreen;
-  min-height: 300px;
+  margin-bottom: 1rem;
+}
+
+.markers {
+  padding: 1rem 0;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.marker {
+  min-height: 5px;
+  flex: 1;
 }
 
 .flipped {
   transform: scaleX(-1);
 }
+/* highlights end */
 
-.features {
-  background-color: lightblue;
-  min-height: 300px;
+/* features start */
+.old-price {
+  color: rgb(118, 118, 118);
+  text-decoration: line-through;
+}
+
+.prices {
+  text-align: right;
 }
 
 .feature {
-  background-color: orange;
-  min-height: 300px;
   flex: 1;
+  background-color: white;
 }
+
+.feature-body {
+  padding: 1rem;
+}
+
+.feature-img {
+  width: 100%;
+}
+/* features end */

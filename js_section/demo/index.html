@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Stuff</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="bodyElement">
+    <header>
+        <div class="container">
+            <h1 onclick="hide(this)">DEMO STUFF</h1>
+        </div>
+    </header>
+    <main class="container flex">
+        <div class="left outline">
+            <select onchange="alert('You chose ' + this.value)">
+                <option value="Spider-Man">Spider-Man</option>
+                <option value="Superman">Superman</option>
+                <option value="Hulk">Hulk</option>
+            </select>
+            <input type="text" id="colorField">
+            <button onclick="changeBg(colorField.value)">Change BG</button>
+        </div>
+        <div class="right outline">
+            <div class="card centered" id="deku">
+                <img src="./images/deku.jpeg" alt="Deku Image" class="deku">
+                <h2 class="centered">Young Midoriya</h2>
+                <button onclick="hide(deku)">DEKU BE GONE</button>
+            </div>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
